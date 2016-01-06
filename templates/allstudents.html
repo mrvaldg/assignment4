@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all_students</title>
+    <link href="b.css" rel="stylesheet"/>
+</head>
+<body>
+Students List:
+{% for k in s %}
+<ul>Student:{{ k }}<br>Courses:<br>{% for c in k.courses.all %}<ul>{{ c }}</ul><br>{% endfor %}</ul>
+    <ul>{{ k }}</ul>
+        <table>
+        {{ form.as_table }}
+           <thead>
+        <tr>
+            <th>name</th>
+            <th>lastname</th>
+
+        </tr>
+        </thead>
+        <tr>
+            <td>{{x}}</td>
+            <td>{{x}}</td>
+
+        </tr>
+        <tr>
+            <td>{{x}}</td>
+            <td>{{x}}</td>
+
+        </tr>
+        <tr>
+            <td>{{x}}</td>
+            <td>{{x}}</td>
+
+        </tr>
+        </table>
+{% endfor %}
+</body>
+</html>

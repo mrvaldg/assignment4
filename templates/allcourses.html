@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All_Courses</title>
+        <link href="b.css" rel="stylesheet"/>
+
+</head>
+<body>
+Course List:
+{% for k in c %}
+
+    <ul>{{ k }}</ul>
+        <table>
+        {{ form.as_table }}
+           <thead>
+        <tr>
+            <th>name</th>
+            <th>code</th>
+
+        </tr>
+        </thead>
+        <tr>
+            <td>{{x}}</td>
+            <td>{{x}}</td>
+
+        </tr>
+        <tr>
+            <td>{{x}}</td>
+            <td>{{x}}</td>
+
+        </tr>
+        </table>
+{% endfor %}
+</body>
+</html>
